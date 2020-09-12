@@ -40,6 +40,7 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: MI-3
+      run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
